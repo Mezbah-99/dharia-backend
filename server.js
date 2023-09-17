@@ -44,7 +44,7 @@ app.post('/update/banner', upload.single('file'), updateController)
 
 
 const port = process.env.PORT || 5000;
-const uri = process.env.MONGO_URI;
+const uri = process.env.MONGODB_URI;
 
 mongoose.connect(uri)
     .then(() => {
